@@ -1,13 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__contacts">
+            <a class="header__phone" href="tel:+380963092145"
+              >+38 (096) 309 21 45</a
+            >
+            <a class="header__email" href="#">layout585@gmail.com</a>
+            <a class="header__btn" data-fancybox data-src="#modal" href="#">Бесплатная консультация</a>
+          </div>
+        </div>
+      </div>
+      <div class="header__content">
+        <div class="container">
+          <div class="header__content-inner">
+            <div class="header__logo">
+              <a href="#">
+                <img src="images/logo.png" alt="logo" />
+              </a>
+            </div>
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__list-link">
+                  <a href="#">Главная</a>
+                </li>
+                <li class="menu__list-link">
+                  <a href="#">О компании</a>
+                </li>
+                <li class="menu__list-link">
+                  <a href="#">Услуги</a>
+                </li>
+                <li class="menu__list-link">
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
 
+    <div id="modal">
+      <h2>Hello!</h2>
+      <p>You are awesome!</p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
 </html>
