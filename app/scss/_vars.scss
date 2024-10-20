@@ -20,3 +20,15 @@ $accent: #ffc222;
   font-family: "PTSerif-Bold", sans-serif;
   font-weight: 700;
 }
+
+%default-btn {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  @extend %roboto-500;
+  color: #fff;
+  padding: 8px 20px 8px 20px;
+  border: 1px solid $accent;
+  border-right-width: 20px;
+  display: inline-block;
+}
