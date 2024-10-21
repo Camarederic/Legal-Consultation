@@ -79,16 +79,5 @@
   &__default-btn {
     @extend %default-btn;
     color: #373636;
-    position: relative;
-    &::after {
-      content: "";
-      position: absolute;
-      background-image: url("../icons/angle-right.svg");
-      width: 10px;
-      height: 10px;
-      right: -17px;
-      top: 15px;
-      background-repeat: no-repeat;
-    }
   }
 }
