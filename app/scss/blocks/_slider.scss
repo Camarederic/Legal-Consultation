@@ -29,16 +29,6 @@
   &__btn {
     @extend %default-btn;
     position: relative;
-    &::after {
-      content: "";
-      position: absolute;
-      background-image: url("../icons/angle-right.svg");
-      width: 10px;
-      height: 10px;
-      right: -17px;
-      top: 15px;
-      background-repeat: no-repeat;
-    }
   }
   &__inner {
     position: relative;
