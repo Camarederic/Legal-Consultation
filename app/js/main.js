@@ -6,4 +6,6 @@ $(function () {
       '<button type="button" class="slick-btn slick-prev"><img src="icons/angle-left.svg"></button>',
     infinite: false,
   });
+
+  $("select").styler();
 });
