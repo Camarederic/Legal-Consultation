@@ -30,6 +30,7 @@
     letter-spacing: 0.1px;
   }
   &__btn {
+    padding-top: 36px;
     a {
       color: #373636;
       border: 3px solid #e6e6e6;
@@ -70,7 +71,7 @@
     justify-content: space-around;
     align-items: center;
   }
-  &__item-link{
+  &__item-link {
     border-bottom: 1px solid #050505;
     color: #050505;
     @extend %roboto-400;

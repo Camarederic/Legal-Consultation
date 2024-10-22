@@ -1,0 +1,139 @@
+.news {
+  padding: 50px 0 110px;
+  background-color: #f9f9f9;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 65px;
+  }
+  &__title-box {
+    max-width: 520px;
+    padding-left: 140px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 105px;
+      height: 3px;
+      background-color: $accent;
+      left: 0;
+      top: 10px;
+    }
+  }
+  &__title {
+    font-size: 24px;
+    line-height: 24px;
+    @extend %roboto-500;
+    color: #212020;
+    margin-bottom: 18px;
+  }
+  &__text {
+    letter-spacing: 0.1px;
+  }
+  &__btn {
+    padding-top: 36px;
+    a {
+      color: #373636;
+      border: 3px solid #e6e6e6;
+      line-height: 24px;
+      letter-spacing: 0.25px;
+      padding: 5px 38px;
+    }
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__slider {
+    max-width: 555px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 5px 15.36px 0.64px rgba(128, 127, 127, 0.13);
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 65px;
+      height: 30px;
+      background-color: $accent;
+      top: 0;
+      left: 70px;
+    }
+    &::after {
+      content: url("../icons/quote.svg");
+      position: absolute;
+      height: 15px;
+      width: 15px;
+      top: 7px;
+      left: 96px;
+    }
+  }
+  &__slider-item {
+    padding: 60px 40px 45px 70px;
+  }
+  &__slider-title {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    @extend %roboto-400;
+    color: #242424;
+    margin-bottom: 20px;
+  }
+  &__slider-text {
+    @extend %ptserif-400;
+    letter-spacing: 0.1px;
+    color: $default;
+    margin-bottom: 40px;
+  }
+  &__slider-author {
+    color: #212020;
+    @extend %ptserif-400;
+    letter-spacing: 0.1px;
+  }
+  &__slider-inner {
+    .slick-btn {
+      top: auto;
+      bottom: -80px;
+    }
+    .slick-prev {
+      right: 55px;
+      left: auto;
+    }
+    .slick-disabled {
+      color: #dadada;
+      border-color: #dadada;
+    }
+  }
+
+  &__blog {
+    max-width: 260px;
+    width: 100%;
+  }
+  &__images {
+    position: relative;
+  }
+  &__date {
+    position: absolute;
+    background-color: $accent;
+    width: 50px;
+    height: 55px;
+    color: #fff;
+    text-align: center;
+    padding-top: 30px;
+    @extend %roboto-500;
+    top: 0;
+    left: 10px;
+  }
+  &__blog-title {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    @extend %roboto-500;
+    color: #242424;
+    padding: 20px 0 15px;
+  }
+  &__blog-text {
+    @extend %ptserif-400;
+    letter-spacing: 0.1px;
+    color: $default;
+  }
+}
