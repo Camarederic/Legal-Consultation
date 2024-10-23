@@ -59,11 +59,11 @@
 
   &__map {
     padding-top: 10px;
-    /* iframe {
-      max-width: 630px;
-      height: 250px;
+    max-width: 630px;
+    width: 100%;
+    iframe {
       width: 100%;
-    } */
+    }
   }
   &__copy {
     background-color: #303030;
