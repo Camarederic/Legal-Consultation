@@ -97,9 +97,15 @@
   }
 }
 
+.header {
+  &__btn-menu {
+    display: none;
+  }
+}
+
 #modal {
   display: none;
-  h2{
+  h2 {
     margin-bottom: 20px;
   }
 }
